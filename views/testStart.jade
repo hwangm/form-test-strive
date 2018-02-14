@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    .jumbotron
+        .row
+            h1 Strive Talent Evaluation
+        .row
+            p Please hit the Start button to begin the test.
+        .row
+            a#startTest.btn.btn-primary(href='/test/'+userId+'/question/1') Start test
+
+block scripts
+    script(src="/javascripts/test.js")

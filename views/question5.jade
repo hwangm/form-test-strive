@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    .jumbotron
+        .row
+            .col-md-12
+                #timer.text-right
+        .row
+            .col-md-12
+                form
+                    .form-group
+                        label(for="question5") Are you happy to be done with the test? 
+                        textarea.form-control#question5(name="question5", rows=8, placeholder="Yes I am!")
+                    a#question1Submit.btn.btn-primary(href='/test/'+userId+'/finish') Finish test
+
+block scripts
+    script(src="/javascripts/test.js")

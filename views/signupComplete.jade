@@ -1,0 +1,19 @@
+extends layout
+
+extends layout
+
+block content
+  div.container
+    div.row.text-center
+      h2 Welcome to the Strive Talent assessment. This assessment will allow you to prove your 
+        | potential to multiple employers at once. Good luck, and we'll be in touch!
+    .jumbotron#formContainer
+      .col-md-12
+        p Thank you for completing the form. Your test has started in a new window. Please close this window when you are done with the assessment.
+
+        h2 Event ID: 
+            span#eventID #{testId}
+
+      
+block scripts
+  script(src="/javascripts/index.js")

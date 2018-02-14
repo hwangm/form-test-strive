@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  div.container
+    div.row.text-center
+      h2 Welcome to the Strive Talent assessment. This assessment will allow you to prove your 
+        | potential to multiple employers at once. Good luck, and we'll be in touch!
+    .jumbotron#formContainer
+      .col-md-12
+        h2 Enter your information:
+        p Please verify or enter your personal information below:
+      .col-md-12
+        form#entryForm(action="/", method="POST")
+          .form-group
+            label(for="firstName") First name: 
+            input#firstName.form-control(type="text", placeholder="John", name='firstName')
+          .form-group
+            label(for="lastName") Last name:  
+            input#lastName.form-control(type="text", placeholder="Doe", name='lastName')
+          .form-group
+            label(for="userEmail") Email address:  
+            input#userEmail.form-control(type="email", placeholder="name@example.com", name='userEmail')
+          .form-check
+            input#checkTermsOfUse.form-check-input(type="checkbox", value="") 
+            label.form-check-label(for="checkTermsOfUse") I accept and agree to the 
+              a(href='') Terms of Use 
+              | and 
+              a(href="") Privacy Statement
+          br
+          button.btn.btn-primary(type="submit") Submit
+block scripts
