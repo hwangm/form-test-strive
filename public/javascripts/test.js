@@ -11,7 +11,7 @@ $(document).ready(function() {
                 },
                 type: 'POST',
                 success: function(data, status, jqXHR) {
-                    console.log(status);
+                    window.location.href=$('a').prop('href');
                 } 
             });
         }
@@ -31,7 +31,7 @@ $(document).ready(function() {
             display.textContent = minutes + ":" + seconds;
     
             if (--timer < 0) {
-                $('a').trigger('click');
+                $('a').click();
                 timer = 0;
                 clearInterval();
             }

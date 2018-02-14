@@ -7,8 +7,7 @@ $(document).ready(function() {
     //     // }
     // });
 
-    let url='localhost:3000/test/'+$('#eventID').text()+"/start";
-    let features='menubar=no,toolbar=no'
-    window.open(url, "test")
-
+    let url='/test/'+$('#eventID').text()+"/start";
+    let features='scrollbars=no,status=no,location=no,toolbar=no,menubar=no'
+    window.open(url, "test", features)
 });
