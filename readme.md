@@ -25,3 +25,11 @@ Bootstrap for basic styling
         - do not have to store the answer client-side. Each question reuses the same API call with different parameters. 
     - Cons:
         - More bandwidth usage, making AJAX calls after every question instead of saving the questions in an object and only sending to DB when the test is done. 
+- No .env file for db credentials
+    - Pros:
+        - I haven't used Heroku in a long time so I wasn't sure if it was able to deploy projects with .env or if I'd have to manually add it (because it wouldn't be included in the repo). For typical projects, I'd absolutely use a .env file, or some other secure way of storing credentials because this is a big security risk. 
+    - Cons:
+        - Security risk having credentials hard coded
+        - Development issue as well, having multiple developers have a local copy of the app would have to modify source code to change credentials instead of their local .env. 
+        - Overall, would not recommend this strategy but under time pressure for this test, I decided to take this approach. 
+
