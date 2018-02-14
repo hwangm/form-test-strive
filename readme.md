@@ -33,3 +33,6 @@ Bootstrap for basic styling
         - Development issue as well, having multiple developers have a local copy of the app would have to modify source code to change credentials instead of their local .env. 
         - Overall, would not recommend this strategy but under time pressure for this test, I decided to take this approach. 
 
+### Other notes
+- Did not have time to add validation to the initial form to make sure the fields are required (was going to come back to this). This will probably cause the app to error out because the Mongoose model used required the firstname and lastname fields. 
+- There is a 1 second delay with the timer, I did not have time to debug it. 
