@@ -13,15 +13,15 @@ block content
         form#entryForm(action="/", method="POST")
           .form-group
             label(for="firstName") First name: 
-            input#firstName.form-control(type="text", placeholder="John", name='firstName')
+            input#firstName.form-control(type="text", placeholder="John", name='firstName', required)
           .form-group
             label(for="lastName") Last name:  
-            input#lastName.form-control(type="text", placeholder="Doe", name='lastName')
+            input#lastName.form-control(type="text", placeholder="Doe", name='lastName', required)
           .form-group
             label(for="userEmail") Email address:  
-            input#userEmail.form-control(type="email", placeholder="name@example.com", name='userEmail')
+            input#userEmail.form-control(type="email", placeholder="name@example.com", name='userEmail', required)
           .form-check
-            input#checkTermsOfUse.form-check-input(type="checkbox", value="") 
+            input#checkTermsOfUse.form-check-input(type="checkbox", value="", required) 
             label.form-check-label(for="checkTermsOfUse") I accept and agree to the 
               a(href='') Terms of Use 
               | and 
