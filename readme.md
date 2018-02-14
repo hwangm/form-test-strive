@@ -34,5 +34,5 @@ Bootstrap for basic styling
         - Overall, would not recommend this strategy but under time pressure for this test, I decided to take this approach. 
 
 ### Other notes
-- Did not have time to add validation to the initial form to make sure the fields are required (was going to come back to this). This will probably cause the app to error out because the Mongoose model used required the firstname and lastname fields. 
+- Did not have time to add validation to the initial form to make sure the fields are required (was going to come back to this). This will probably cause the app to error out because the Mongoose model used required the firstname and lastname fields. To fix this, I would have had to add the `required` attribute to each input in the entry form. 
 - There is a 1 second delay with the timer, I did not have time to debug it. 
